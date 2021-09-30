@@ -1,0 +1,147 @@
+/*CSS reset*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    border: 0px;
+    outline: none;
+    font-family: arial, "Microsoft JhengHei", sans-serif !important;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.allPage {
+    width: 70%;
+}
+
+.imageTitle {
+    position: relative;
+}
+
+.h1Title {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size: 30px;
+}
+
+.h1Color {
+    font-size: 30px;
+    color: #FFF;
+}
+
+.smallSay {
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    color: #FFF;
+}
+
+.h1Image {
+    width: 100%;
+}
+
+.choosePart {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFF;
+    list-style-type: none;
+    background: linear-gradient(180deg, #FFF 0%, #000 60%);
+}
+
+.choosePart li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.choosePart li:hover {
+    background: linear-gradient(180deg, #000 60%, #FFF 100%);
+}
+
+.chooseLink {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.leftNav {
+    display: inline-block;
+    width: 30%;
+}
+
+.loginInArea,
+.newsArea {
+    width: 100%;
+}
+
+.titleText {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    color: #FFF;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #FFF 0%, #000 60%);
+}
+
+.contantText {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inputText {
+    display: block;
+    margin: 3px;
+    border: 1px solid #000;
+}
+
+.linkText {
+    display: block;
+    margin: 3px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mainArea {
+    display: inline-block;
+    width: 65%;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.h2Title {
+    font-size: 30px;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.smallText {
+    font-size: 14px;
+    list-style-type: circle;
+}
+
+.blueText {
+    color: #0000FF;
+}
+
+.h6Title {
+    margin: 10px 0px;
+}
+
+footer {
+    margin: 10px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    color: #FFF;
+    background: linear-gradient(180deg, #000 60%, #FFF 100%);
+}
+
+footer span {
+    text-decoration: underline;
+}
