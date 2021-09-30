@@ -15,25 +15,257 @@
             outline: none;
             font-family: arial, "Microsoft JhengHei", sans-serif !important;
         }
+
+        body {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
         .allPage {
+            width: 70%;
+        }
+
+        .imageTitle {
+            position: relative;
+        }
+
+        .h1Title {
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            font-size: 30px;
 
         }
-        .h1Title {
-            font-size:30px;
+
+        .h1Color {
+            font-size: 30px;
+            color: #FFF;
         }
-        
-        /*頁首部分*/
+
+        .smallSay {
+            position: absolute;
+            left: 20px;
+            top: 80px;
+            color: #FFF;
+        }
+
+        .h1Image {
+            width: 100%;
+        }
+
+        .choosePart {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #FFF;
+            list-style-type: none;
+            background: linear-gradient(180deg, #FFF 0%, #000 60%);
+        }
+
+        .choosePart li {
+            display: inline-block;
+            padding: 30px;
+        }
+
+        .choosePart li:hover {
+            background: linear-gradient(180deg, #000 60%, #FFF 100%);
+
+        }
+
+        .chooseLink {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        .leftNav {
+            display: inline-block;
+            width: 30%;
+        }
+
+        .loginInArea,
+        .newsArea {
+            width: 100%;
+        }
+
+        .titleText {
+            display: block;
+            padding: 5px;
+            font-size: 20px;
+            color: #FFF;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background: linear-gradient(180deg, #FFF 0%, #000 60%);
+        }
+
+        .contantText {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .inputText {
+            display: block;
+            margin: 3px;
+            border: 1px solid #000;
+        }
+
+        .linkText {
+            display: block;
+            margin: 3px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .mainArea {
+            display: inline-block;
+            width: 65%;
+            vertical-align: top;
+            margin-left: 20px;
+        }
+
+        .h2Title {
+            font-size: 30px;
+        }
+
+        .rightText {
+            text-align: right;
+        }
+
+        .smallText {
+            font-size: 14px;
+            list-style-type: circle;
+        }
+        .blueText {
+            color: #0000FF;
+        }
+        .h6Title {
+            margin: 10px 0px;
+        }
+
+        footer {
+            margin: 10px 0px;
+            padding: 10px 0px;
+            text-align: center;
+            color: #FFF;
+            background: linear-gradient(180deg, #000 60%, #FFF 100%);
+        }
+
+        footer span {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <article class="allPage">
         <header class="imageTitle">
-            <h1 class="h1Title">BLACK & WHITE</h1>
-            <span>Cpmpany Slogan Goes Here</span>
-            <img src="/images/tokyo.jpg" />
+            <h1 class="h1Title">BLACK & <span class="h1Color">WHITE</span></h1>
+            <span class="smallSay">Cpmpany Slogan Goes Here</span>
+            <img class="h1Image" src="./images/tree.jpg" />
         </header>
+        <ul class="choosePart">
+            <a class="chooseLink" href="#">
+                <li>Home</li>
+            </a>
+            <a class="chooseLink" href="#">
+                <li>Blog</li>
+            </a>
+            <a class="chooseLink" href="#">
+                <li>Gallry</li>
+            </a>
+            <a class="chooseLink" href="#">
+                <li>About</li>
+            </a>
+            <a class="chooseLink" href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <nav class="leftNav">
+            <section class="loginInArea">
+                <span class="titleText">Customer Login</span>
+                Login Name:<input class="inputText" type="text" />
+                Password:<input class="inputText" type="text" />
+                <input class="inputText" type="button" value="login" />
+                <span class="linkText">Fogot your Dassword?</span>
+            </section>
+            <section class="newsArea">
+                <span class="titleText">Company News</span>
+                <h5>June 23, 2011</h5>
+                <p class="contantText">Tempus in. lacus. Duistempor posuere diam. Suspendisse vel tellus quisnunc
+                    malesuada porta. ...</p>
+                <br>
+                <h5>March 4, 2011</h5>
+                <p class="contantText">Nulla id maqna sed dolorsollicitudin laoreet tempus in, lacus. Duis tempor
+                    posuere diam…</p>
+                <br>
+                <h5>February 18, 2011</h5>
+                <p class="contantText">Lorem ipsum dolor sit amet. consectetuer adipiscing elit. ...</p>
+                <br>
+                <h5>February 12, 2011</h5>
+                <p class="contantText">Sed dolor sollicitudin laoreet. tempus in. lacus. Duis tempor posuere diam.
+                    Suspendisse</p>
+                <br>
+                <h5>February lf 2011</h5>
+                <p class="contantText">Ipsum dolor sit amet. consectetuer adipiscing elit. In nec...</p>
+                <br>
+            </section>
+        </nav>
+        <section class="mainArea">
+            <h2 class="h2Title">Welcome to Our Website!</h2>
+            <h6 class="h6Title">METAMORPHOSIS DESIGN</h6>
+            <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam erat.
+                <br />
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam. quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisi ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat...
+            </p>
+            <div class="rightText">
+                <span class="smallText">·Comments(2)</span>
+                <span class="smallText blueText">·21.02.</span>
+            </div>
+            <h6 class="h6Title">FREE WEBSITE TEMPLATES</h6>
+            <p>Sit amet. consectetuer adipiscing elit. sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam. quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisi ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat...
+            </p>
+            <div class="rightText">
+                <span class="smallText">·Comments(8)</span>
+                <span class="smallText blueText">·13.46.</span>
+            </div>
+            <h6 class="h6Title">FLASH TEMPLATES</h6>
+            <p>Consectetuer adipiscing elit. sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+                <br />
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat...
+            </p>
+            <div class="rightText">
+                <span class="smallText">·Comments(2)</span>
+                <span class="smallText blueText">·21.02.</span>
+            </div>
+        </section>
+        <footer>
+            Copyright ; 2011. <span>Flash Tfemplates</span>
+            <br />
+            <span>Privacy Policy</span> | <span>"ferms of Use</span> | <span>XHTML</span> | <span>CSS</span>
+        </footer>
     </article>
+
 </body>
 
 </html>
