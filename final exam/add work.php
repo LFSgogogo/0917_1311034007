@@ -98,8 +98,9 @@
             line-height: 50px;
         }
 
-        .inputRounded {
+        .inputBorder {
             border-radius: 10px;
+            border: solid 1.5px #69605B;
         }
 
         .inputTxt {
@@ -218,7 +219,7 @@
                             <span class="spanColor">*作品名稱：&nbsp;</span>
                         </div>
                         <div class="col-9">
-                            <input class="container-fluid inputRounded" type="text" />
+                            <input class="container-fluid inputBorder" type="text" />
                         </div>
                     </div>
                     <div class="row my-3">
@@ -226,7 +227,7 @@
                             <span class="spanColor">*作品敘述：&nbsp;</span>
                         </div>
                         <div class="col-9">
-                            <textarea class="container-fluid inputRounded" name="w3review" rows="6"></textarea>
+                            <textarea class="container-fluid inputBorder" name="w3review" rows="6"></textarea>
                         </div>
                     </div>
                     <div class="row my-3">
@@ -234,7 +235,7 @@
                             <span class="spanColor">&nbsp;外部連結：&nbsp;</span>
                         </div>
                         <div class="col-9">
-                            <input class="container-fluid inputRounded" type="text" />
+                            <input class="container-fluid inputBorder" type="text" />
                         </div>
                     </div>
                     <div class="row my-3">
@@ -242,7 +243,7 @@
                             <span class="spanColor">*附加檔案：&nbsp;</span>
                         </div>
                         <div class="col-9">
-                            <button class="container-fluid inputRounded p-3 spanColor fw-bold">
+                            <button class="container-fluid inputBorder p-3 spanColor fw-bold">
                                 <img src="Images/upload.png" class="iconSize">
                                 &nbsp&nbsp上傳檔案
                             </button>
